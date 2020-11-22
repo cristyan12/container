@@ -14,7 +14,7 @@ class Container
     protected array $bindings = [];
     protected array $shared = [];
 
-    public static function setInstance(?Container $container = null): void
+    public static function setInstance(?Container $container): void
     {
         static::$instance = $container;
     }
