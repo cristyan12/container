@@ -11,13 +11,6 @@ class Application
         $this->container = $container;
     }
 
-    public function register(): void
-    {
-        $this->registerSessionManager();
-        $this->registerAuthenticator();
-        $this->registerAccessHandler();
-    }
-
     public function registerProviders(array $providers): void
     {
         foreach ($providers as $provider) {
